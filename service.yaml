@@ -5,9 +5,8 @@ metadata:
   labels:
     run: my-nginx
 spec:
-  type: NodePort
+  type: LoadBalancer
   ports:
-  - nodePort: 32000
     port: 80
     protocol: TCP
   selector:
